@@ -5,8 +5,7 @@
 .container
 {
   
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -66,7 +65,7 @@ letter-spacing: 0.05em;
     justify-content: space-between;
     /* align-content: center; */
     align-items: center;
-    width:1300px;
+    width:1116px;
     background-color: rgb(255, 255, 255);
     height: 100px;
 }
@@ -87,7 +86,7 @@ article
 }
 .container-2
 {
-  width: 1300px;
+  width: 1116px;
   height: 435px;
 }
 
@@ -148,11 +147,9 @@ opacity: 0.5;
 
 .container-3
 {
- width:1300px;
+  width: 1116px;
   min-height: 1500px;
   background: rgba(248, 251, 255, 1);
-
- 
 }
 
 .main-article
@@ -160,7 +157,7 @@ opacity: 0.5;
   display: flex;
   /* align-content: center; */
   align-items: center;
-  width:1176px ;
+  width:1116px ;
   background: rgba(248, 251, 255, 1);
   height: 690px;
 }
@@ -168,10 +165,10 @@ opacity: 0.5;
 
 .Rectangle
 {
-  width:558px ;
-  height:575px ;
-  background-color:rgb(255, 255, 255) ;
-  margin-left:60px ;
+  width: 520px;
+  height: 575px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 55px;
   margin-top: 40px;
   border-radius: 30px;
 
@@ -179,34 +176,56 @@ opacity: 0.5;
 
 .girl-img
 {
+  
   position: absolute;
-  width: 883.99px;
+  width: 520px;
   height: 548px;
-  left: 658px;
+  left: 598px;
   top: 80px;
+}
+.girl-img img
+{
+  width: 527px;
+  height: 548px;
 }
 
 #Request-1000
 {
- height: 55px;
-width: 222px;
-left: 200px;
-top: 869px;
-border-radius: 8px;
-text-align: center;
-
+ 
+  color: rgba(125, 146, 167, 1);
+  position: relative;
+  height: 55px;
+  left: 33px;
+  width: 210px;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  margin-top: 9px;
+  margin-bottom: 5px;
 }
 
 #Request-10000
 {
-  height: 55px;
-width: 222px;
-left: 200px;
-top: 869px;
-border-radius: 8px;
-text-align: center;
-background-color: #007AFF;
 
+  position: relative;
+  height: 55px;
+  width: 210px;
+  left: 50px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #007AFF;
+  color: #FFFFFF;
+  border: none;
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
 }
 
 .form-contain
@@ -227,28 +246,35 @@ font-size: 18px;
 line-height: 17px;
 letter-spacing: 0em;
 text-align: left;
+color: rgba(0, 0, 0, 1);
+
 
 
 }
+
+.form-contain button
+{
+left:120px;
+}
+
 .form-contain input
 {
   
-  height: 55px;
-  width: 485px;
-  border-radius: 8px;
-  text-align: left;
-  margin-left:32px ;
-  margin-bottom: 20px;
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 17px;
-  align-items: center;
-  color: #7D92A7;
-  border: none;
-  background: rgba(247, 248, 250, 1);
-
+     height: 55px;
+    width: 440px;
+    border-radius: 8px;
+    text-align: left;
+    margin-left: 32px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    align-items: center;
+    color: #7D92A7;
+    border: none;
+    background: rgba(247, 248, 250, 1);
 
 }
 .square
@@ -266,25 +292,33 @@ border-radius: 4px;
 
 #Request-XDC
 {
-height: 55px;
-width: 222px;
-left: 200px;
-top: 869px;
-border-radius: 8px;
-text-align: center;
-background-color: #007AFF;
-margin-top: 30px;
+ 
+  height: 55px;
+  width: 222px;
+  left: 35px;
+  /* top: 869px; */
+  border-radius: 8px;
+  text-align: center;
+  background-color: #007AFF;
+  margin-top: 80px;
+  position: relative;
+  border: none;
+  color: white;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
 }
 /*  */
 
 .transaction-table{
   position: relative;
-  align-items: flex-start;
-  Width:1150px;
-  Height:605px;
-  top: 730px;
-  left: 90px;
-
+    align-items: flex-start;
+    Width: 1108px;
+    Height: 605px;
+    top: 730px;
+    left: 5px;
 }
 table {
   font-family: arial, sans-serif;
@@ -439,13 +473,14 @@ text-align: left;
   padding: 10px;
 } */
 .pagination {
+  
   position: relative;
-    top: 725px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    justify-content: center;
-    left: 460px;
-    width: 450px;
+  top: 725px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  justify-content: center;
+  left: 340px;
+  width: 450px;
   display: inline-block;
 }
 
