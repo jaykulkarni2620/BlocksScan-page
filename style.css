@@ -117,8 +117,6 @@ font-size: 60px;
 font-weight: 700;
 line-height: 72px;
 letter-spacing: 0em;
-
-
 font-family: Poppins;
 font-size: 60px;
 font-weight: 700;
@@ -140,6 +138,11 @@ text-align: center;
 color: rgba(0, 0, 0, 1);
 opacity: 0.5;
 
+}
+
+.article-text p span
+{
+  color: #007AFF ;
 }
 
 /*  */
@@ -180,7 +183,7 @@ opacity: 0.5;
   position: absolute;
   width: 520px;
   height: 548px;
-  left: 598px;
+  left: 600px;
   top: 80px;
 }
 .girl-img img
@@ -248,8 +251,6 @@ letter-spacing: 0em;
 text-align: left;
 color: rgba(0, 0, 0, 1);
 
-
-
 }
 
 .form-contain button
@@ -296,7 +297,7 @@ border-radius: 4px;
   height: 55px;
   width: 222px;
   left: 35px;
-  /* top: 869px; */
+  top: 90px;
   border-radius: 8px;
   text-align: center;
   background-color: #007AFF;
@@ -505,4 +506,48 @@ text-align: left;
 .radius
 {
   background-color: #fff;
+}
+
+#myDIV
+{
+  position: relative;
+    bottom: 100px;
+}
+
+#myDIVm input
+{
+  background-color: red;
+}
+
+#myDIV p
+{
+  
+  position: relative;
+  left: 40px;
+  font-family: Fira Sans;
+  font-size: 14px;
+  bottom: 20px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  display: inline-block;
+}
+
+#twitter
+{
+  
+  position: relative;
+  bottom: 0px;
+  font-family: Fira Sans;
+  font-size: 14px;
+  bottom: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+#myDIV label
+{
+  position: relative;
+  bottom: 30px;
 }

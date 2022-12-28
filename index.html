@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="app.js">
   </head>
   <body>
     <!--- Header secrion -->
@@ -29,7 +30,7 @@
         <p>This faucet is the official XDC Faucet for XDC Network, Input your Address,<br>
           complete verification, and receive a small amount of XDC <br>
           to your wallet in second.</p>
-          <p>If you need more than 0.005 XDC, see here</p>
+          <p>If you need more than 0.005 XDC, see<span> <u>here</u></span></p>
         </div>
         </div>
 
@@ -43,15 +44,19 @@
               <form action="">
               <label for="FirstName">Network</label><br>
               <input type="text" id="FirstName" placeholder="XDC Network" name="user" required><br>
-              <label for="LastName">Wallet    </label><br>
+              
+              <label for="LastName">Wallet </label><br>
               <input type="text" id="wallet" placeholder="" name="user" required><br>
               <label for="Request-Ammount">Request Ammount</label><br>
               <button id="Request-1000">1000 XDC</button>
-              <button id="Request-10000" >10000 XDC</button><br>
-              <label for="Request-Ammount">Verify</label><br>
+              <button id="Request-10000" type="button" onclick="myFunction()">10000 XDC</button><br>
               <!-- <div class="g-recaptcha" data-sitekey="6LfyYqcjAAAAADSaWSQ5u_gwZtmC8t12RnS368u9"></div> -->
 
               <button id="Request-XDC">Request XDC</button>
+              <div id="myDIV" >
+                <p>paste the following text in your twitter post requesting this much<br>  amount from.</p></br>
+                <label for="twitter">Twitter</label>
+              <input type="text" id="twitter" name="twitter"><br><br>
               </form>
               </div>
               </div>
@@ -184,8 +189,8 @@
   <footer>
     <div class="pagination">
       <a href="#">&laquo;</a>
-      <a href="#">1</a>
-      <a href="#" class="active">2</a>
+      <a href="#" class="active"  >1</a>
+      <a href="#">2</a>
       <a href="#">3</a>
       <a href="#">4</a>
       <a href="#">5</a>
@@ -202,3 +207,5 @@
   </body>
 </html>
 
+devnet
+apothem
