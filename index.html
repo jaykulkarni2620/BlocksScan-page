@@ -9,7 +9,7 @@
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" href="app.js">
+    <script src="script.js"></script>
   </head>
   <body>
     <!--- Header secrion -->
@@ -42,21 +42,27 @@
             <div class="form-contain">
 
               <form action="">
-              <label for="FirstName">Network</label><br>
-              <input type="text" id="FirstName" placeholder="XDC Network" name="user" required><br>
-              
+              <!-- <label for="FirstName">Network</label><br>
+              <input type="text" id="FirstName" placeholder="XDC Network" name="user" required><br> -->
+              <label for="network">Choose Network : </label>
+              <select name="network" id="network">
+                <option value="RPC Apothem">RPC Apothem</option>
+                <option value="Devnet">Devnet</option>
+                </select>
+                
+                <br><br>
               <label for="LastName">Wallet </label><br>
-              <input type="text" id="wallet" placeholder="" name="user" required><br>
+              <input type="text" id="wallet" placeholder="  Paste your wallet address" name="user" required><br>
               <label for="Request-Ammount">Request Ammount</label><br>
               <button id="Request-1000">1000 XDC</button>
               <button id="Request-10000" type="button" onclick="myFunction()">10000 XDC</button><br>
               <!-- <div class="g-recaptcha" data-sitekey="6LfyYqcjAAAAADSaWSQ5u_gwZtmC8t12RnS368u9"></div> -->
 
               <button id="Request-XDC">Request XDC</button>
-              <div id="myDIV" >
-                <p>paste the following text in your twitter post requesting this much<br>  amount from.</p></br>
+              <div id="myDIV" style="display:none">
+                <p>Paste the following text in your <a href="https://twitter.com/">Twitter</a> post requesting X amount from BlocksScan faucet <br> Thank you @BlocksScan</p></br>
                 <label for="twitter">Twitter</label>
-              <input type="text" id="twitter" name="twitter"><br><br>
+              <input type="text" id="twitter" name="twitter" placeholder="   Paste your twitter post link"><br><br>
               </form>
               </div>
               </div>
