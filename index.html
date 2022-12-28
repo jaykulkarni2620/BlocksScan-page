@@ -1,217 +1,293 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>BlocksScan Faucet 2.0</title>
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="script.js"></script>
-  </head>
-  <body>
-    <!--- Header secrion -->
-    <div class="container">
-      <header class="main-header">
-        <img src="image/logo.png">
-        <nav>
-          <button class="btn-1"><span>SUPPORT</span></button>
-          <button class="btn-2"><span>SIGN UP</span></button>
-        </nav>
-      </header>
-	      <!---<div class="row">--->
-        <div class="container-2">
-       
-        <img class="background-image" src="image/final.png">
+</head>
+<body>
+<div class="bs-header">
+    <div class="bs-container">
+        <header class="main-header">
+            <img src="image/logo.png">
+            <nav>
+                <button class="btn-1"><span>SUPPORT</span></button>
+                <button class="btn-2"><span>SIGN UP</span></button>
+            </nav>
+        </header>
+    </div>
+</div>
+<div class="bs-main">
+    <div class="bs-container">
+
         <div class="article-text">
-        <h1>Need <span>XDC?</span>  </h1>
-        <p>This faucet is the official XDC Faucet for XDC Network, Input your Address,<br>
-          complete verification, and receive a small amount of XDC <br>
-          to your wallet in second.</p>
-          <p>If you need more than 0.005 XDC, see<span> <u>here</u></span></p>
+            <h1>Need <span>XDC?</span></h1>
+            <p>This faucet is the official XDC Faucet for XDC Network, Input your Address,<br>
+                complete verification, and receive a small amount of XDC <br>
+                to your wallet in second.</p>
+            <p>If you need more than 0.005 XDC, see<span> <u>here</u></span></p>
         </div>
-        </div>
-
-        <!-- section 3 -->
-      
-        <div class="container-3">
+    </div>
+</div>
+<div class="bs-form">
+    <div class="bs-container">
         <article class="main-article">
-           <div class="Rectangle">
-            <div class="form-contain">
+            <div class="Rectangle">
+                <div class="form-contain">
 
-              <form action="">
-              <!-- <label for="FirstName">Network</label><br>
-              <input type="text" id="FirstName" placeholder="XDC Network" name="user" required><br> -->
-              <label for="network">Choose Network : </label>
-              <select name="network" id="network">
-                <option value="RPC Apothem">RPC Apothem</option>
-                <option value="Devnet">Devnet</option>
-                </select>
-                
-                <br><br>
-              <label for="LastName">Wallet </label><br>
-              <input type="text" id="wallet" placeholder="  Paste your wallet address" name="user" required><br>
-              <label for="Request-Ammount">Request Ammount</label><br>
-              <button id="Request-1000">1000 XDC</button>
-              <button id="Request-10000" type="button" onclick="myFunction()">10000 XDC</button><br>
-              <!-- <div class="g-recaptcha" data-sitekey="6LfyYqcjAAAAADSaWSQ5u_gwZtmC8t12RnS368u9"></div> -->
+                    <form action="">
+                        <div class="bs-form-input">
+                            <label for="network">Choose Network : </label>
+                            <select name="network" id="network">
+                                <option value="RPC Apothem">RPC Apothem</option>
+                                <option value="Devnet">Devnet</option>
+                            </select>
+                        </div>
+                        <div class="bs-form-input">
+                            <label for="wallet">Wallet </label>
+                            <input type="text" id="wallet" placeholder="  Paste your wallet address" name="user"
+                                   required>
+                        </div>
+                        <div class="bs-form-button">
+                            <label>Request Ammount</label>
+                            <button id="Request-1000">1000 XDC</button>
+                            <button id="Request-10000" type="button" onclick="myFunction()">10000 XDC</button>
+                        </div>
+                        <!-- <div class="g-recaptcha" data-sitekey="6LfyYqcjAAAAADSaWSQ5u_gwZtmC8t12RnS368u9"></div> -->
 
-              <button id="Request-XDC">Request XDC</button>
-              <div id="myDIV" style="display:none">
-                <p>Paste the following text in your <a href="https://twitter.com/">Twitter</a> post requesting X amount from<br> BlocksScan faucet <br> Thank you @BlocksScan</p></br>
-                <label for="twitter">Twitter</label>
-              <input type="text" id="twitter" name="twitter" placeholder="   Paste your twitter post link"><br><br>
-              </form>
-              </div>
-              </div>
-              <div class="girl-img">
+                        <div class="bs-form-input">
+                            <div id="myDIV" style="display:none">
+                                <p>Paste the following text in your <a href="https://twitter.com/">Twitter</a> post
+                                    requesting X amount from<br> BlocksScan faucet <br> Thank you @BlocksScan</p>
+                                <label for="twitter">Twitter</label>
+                                <input type="text" id="twitter" name="twitter"
+                                       placeholder="   Paste your twitter post link">
+                            </div>
+                        </div>
+                        <div class="bs-form-button">
+                            <button id="Request-XDC">Request XDC</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="girl-img">
                 <img src="image/girl.png">
             </div>
-            </article>
-
-            
-  <div class="transaction-table">
-    <div class="header">
-      <h3>
-        Transaction
-      </h3>
-      <div>
-        <input type="date">
-      </div>
+        </article>
     </div>
-    <table class="table ">
-      <thead class="radius">
-        <tr class="head">
-          <th scope="col">TxHash</th>
-          <th scope="col">To</th>
-          <th scope="col">Value</th>
-          <th scope="col">Date/Time</th>
-          <th scope="col">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary">OUT</button>
-          </td>
-          <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class="blue">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary">OUT</button>
-          </td>
-         <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary">OUT</button>
-          </td>
-        <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary">OUT</button>
-          </td>
-          <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary">OUT</button>
-          </td>
-          <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary">OUT</button>
-          </td>
-          <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary" id="in">IN</button>
-          </td>
-         <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr>
-        <tr class="radius">
-          <td class="txHead">
-            <div class="hash">0x505cece5938616</div>
-            <button class=" mybtn btn btn-primary" id="in">IN</button>
-          </td>
-         <td><div class="myflex" id="To-box">0x505cece5938616</div></td>
-          <td><div class="myflex">13000000 XDC</div>
-          </td>
-          <td><div class="myflex">26 Dec 2022 </div></td>
-          <td>
-            <div class="myflex"><button class=" btn btn-primary">View</button></div></td>
-        </tr> 
+</div>
+<div class="bs-transaction">
+    <div class="bs-container">
+        <div class="transaction-table">
+            <div class="header">
+                <h3>
+                    Transaction
+                </h3>
+                <div>
+                    <input type="date">
+                </div>
+            </div>
+            <table class="table ">
+                <thead class="radius">
+                <tr class="head">
+                    <th scope="col">TxHash</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Date/Time</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary">OUT</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class="blue">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary">OUT</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary">OUT</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary">OUT</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary">OUT</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary">OUT</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary" id="in">IN</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="radius">
+                    <td class="txHead">
+                        <div class="hash">0x505cece5938616</div>
+                        <button class=" mybtn btn btn-primary" id="in">IN</button>
+                    </td>
+                    <td>
+                        <div class="myflex" id="To-box">0x505cece5938616</div>
+                    </td>
+                    <td>
+                        <div class="myflex">13000000 XDC</div>
+                    </td>
+                    <td>
+                        <div class="myflex">26 Dec 2022</div>
+                    </td>
+                    <td>
+                        <div class="myflex">
+                            <button class=" btn btn-primary">View</button>
+                        </div>
+                    </td>
+                </tr>
 
-      </tbody>
-    </table>
-  </div>
-  <footer>
-    <div class="pagination">
-      <a href="#">&laquo;</a>
-      <a href="#" class="active"  >1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">&raquo;</a>
-    </div>
-  </footer>
-            
+                </tbody>
+            </table>
         </div>
+    </div>
+</div>
+<div class="bs-footer">
+    <div class="bs-container">
+        <footer>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </footer>
+    </div>
+</div>
 
-        <!-- transaction table -->
-
-      
-  </body>
+</body>
 </html>
-
-devnet
-apothem
